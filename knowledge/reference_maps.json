@@ -8,147 +8,219 @@
  "maps": [
   {
    "title": "RP Florida V2",
-   "author": "Steinman"
+   "author": "Steinman",
+   "workshop_id": "1526892946",
+   "profile": "rp_florida_v2"
   },
   {
    "title": "EvoCity2_v5p",
-   "author": "Sgt. Sickness"
+   "author": "Sgt. Sickness",
+   "workshop_id": "538207599",
+   "profile": null
   },
   {
    "title": "RP Rockford GLife",
-   "author": "pichotm"
+   "author": "pichotm",
+   "workshop_id": "876839844",
+   "profile": null
   },
   {
    "title": "RP rockford Open",
-   "author": "Lg"
+   "author": "Lg",
+   "workshop_id": "625091269",
+   "profile": null
   },
   {
    "title": "RP Rockford (Map File Only)",
-   "author": "Statua"
+   "author": "Statua",
+   "workshop_id": "328735094",
+   "profile": null
   },
   {
    "title": "RP_Paralake_City_V1",
-   "author": "State Trooper"
+   "author": "State Trooper",
+   "workshop_id": "226536385",
+   "profile": null
   },
   {
    "title": "rp_newexton",
-   "author": "Vawяiss"
+   "author": "Vawяiss",
+   "workshop_id": "925591798",
+   "profile": null
   },
   {
    "title": "Rp_NewExton2",
-   "author": "Vawяiss"
+   "author": "Vawяiss",
+   "workshop_id": "1318768443",
+   "profile": null
   },
   {
    "title": "Pines City V2B",
-   "author": "Joufflu"
+   "author": "Joufflu",
+   "workshop_id": "1299936127",
+   "profile": null
   },
   {
    "title": "Pines City V1X",
-   "author": "Joufflu"
+   "author": "Joufflu",
+   "workshop_id": "929618625",
+   "profile": null
   },
   {
    "title": "RP_World",
-   "author": "ZeLzStorm"
+   "author": "ZeLzStorm",
+   "workshop_id": "430252978",
+   "profile": null
   },
   {
    "title": "rp_eastcoast_v4b (April 25 patch)",
-   "author": "Paktacatta"
+   "author": "Paktacatta",
+   "workshop_id": "817430636",
+   "profile": null
   },
   {
    "title": "RP_UnionCity_Day",
-   "author": "Fishke"
+   "author": "Fishke",
+   "workshop_id": "1681190843",
+   "profile": "rp_unioncity_day"
   },
   {
    "title": "RP_Littletown",
-   "author": "Skotty"
+   "author": "Skotty",
+   "workshop_id": "131302441",
+   "profile": null
   },
   {
    "title": "Rp_Downtown_2017",
-   "author": "Kenobi"
+   "author": "Kenobi",
+   "workshop_id": "875594189",
+   "profile": null
   },
   {
    "title": "RP ranoxcity v1",
-   "author": "Anthon"
+   "author": "Anthon",
+   "workshop_id": "1377975404",
+   "profile": null
   },
   {
    "title": "rp_Hollywood_Day",
-   "author": "MergasTroll"
+   "author": "MergasTroll",
+   "workshop_id": "1193674667",
+   "profile": null
   },
   {
    "title": "RP Truenorth",
-   "author": "Statua"
+   "author": "Statua",
+   "workshop_id": "1601428630",
+   "profile": "rp_truenorth_v1a"
   },
   {
    "title": "Rp Evocity Sunshine *Beta*",
-   "author": "xdl"
+   "author": "xdl",
+   "workshop_id": "1334694354",
+   "profile": null
   },
   {
    "title": "Rp Rockford Sunshine v1.2",
-   "author": "xdl"
+   "author": "xdl",
+   "workshop_id": "1248533355",
+   "profile": null
   },
   {
    "title": "rp_downtown_triton",
-   "author": "Hinzy"
+   "author": "Hinzy",
+   "workshop_id": "1521649347",
+   "profile": null
   },
   {
    "title": "RP Life Rockford V1 (map file-only)",
-   "author": "Fantomas"
+   "author": "Fantomas",
+   "workshop_id": "1349675783",
+   "profile": null
   },
   {
    "title": "rp retricity",
-   "author": "Dididreams"
+   "author": "Dididreams",
+   "workshop_id": "646674418",
+   "profile": null
   },
   {
    "title": "Uptown v4 - Day",
-   "author": "ws"
+   "author": "ws",
+   "workshop_id": "1390294662",
+   "profile": null
   },
   {
    "title": "RP Rockford by MK v2",
-   "author": "MauriceKrabs"
+   "author": "MauriceKrabs",
+   "workshop_id": "1455068390",
+   "profile": null
   },
   {
    "title": "RP Modern Rockford(map file-only)",
-   "author": "Lirrox"
+   "author": "Lirrox",
+   "workshop_id": "924820474",
+   "profile": null
   },
   {
    "title": "rp_downtown_triton_v2",
-   "author": "Hinzy"
+   "author": "Hinzy",
+   "workshop_id": "1724608573",
+   "profile": null
   },
   {
    "title": "Rockford French v5 Alpha",
-   "author": "[Nexifi] John Sheppard"
+   "author": "[Nexifi] John Sheppard",
+   "workshop_id": "1424074969",
+   "profile": null
   },
   {
    "title": "Rockford French v4b",
-   "author": "[Nexifi] John Sheppard"
+   "author": "[Nexifi] John Sheppard",
+   "workshop_id": "781977979",
+   "profile": null
   },
   {
    "title": "Rockford French v3b",
-   "author": "[Nexifi] John Sheppard"
+   "author": "[Nexifi] John Sheppard",
+   "workshop_id": "741926545",
+   "profile": null
   },
   {
    "title": "Uptown v4u - 2019 Update",
-   "author": "ws"
+   "author": "ws",
+   "workshop_id": "1784108363",
+   "profile": null
   },
   {
    "title": "RP_UnionCity",
-   "author": "Fishke"
+   "author": "Fishke",
+   "workshop_id": "1656078410",
+   "profile": null
   },
   {
    "title": "Starisland Map Finale",
-   "author": "CornFlakes"
+   "author": "CornFlakes",
+   "workshop_id": "1782967195",
+   "profile": null
   },
   {
    "title": "rp_chaos_city_v33x_03",
-   "author": "(author name omitted)"
+   "author": "(author name omitted)",
+   "workshop_id": "296403366",
+   "profile": null
   },
   {
    "title": "RP Riverden v1a",
-   "author": "Steinman"
+   "author": "Steinman",
+   "workshop_id": "2477080407",
+   "profile": null
   },
   {
    "title": "RP_SouthSide_Day",
-   "author": "Fishke"
+   "author": "Fishke",
+   "workshop_id": "2028581413",
+   "profile": null
   }
  ],
  "families": {
@@ -190,5 +262,6 @@
    "Pines City V1X",
    "Pines City V2B"
   ]
- }
+ },
+ "profiled": 3
 }

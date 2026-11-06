@@ -23,7 +23,7 @@ Register in Claude Code (project `.mcp.json` is included) or run `python -m gmod
 ## Honest scope
 - **"Training" is not model training.** The server encodes vetted rules and measures real maps; benchmarks come from maps you profile locally.
 - **Reverse engineering** was static and non-invasive (file layout, config files, printable strings, BSP header/lump parsing). No decompilation, no redistribution of Valve or third-party binaries/FGDs/maps.
-- **Third-party maps** (the Workshop collection) are not downloaded or bundled. Subscribe to them yourself and run `bsp_analyze` / `rp_scorecard`; save the JSON in `knowledge/profiles/`.
+- **Third-party maps** (the Workshop collection) are not downloaded or bundled. 3 of the 36 (Florida v2, Truenorth, UnionCity Day) were already in the local Steam cache and are profiled in `knowledge/profiles/` (numbers only). For others: subscribe, then `python mcp/profile_gma.py knowledge/profiles <gma-or-bin>`.
 - Engine limits printed by `bsp_analyze` are commonly cited reference values; verify for your branch.
 - Not tested: `compile_run` against a real VMF, Hammer++ GUI automation (Hammer has no API; work on the VMF).
 

@@ -1,6 +1,7 @@
 """Read-only Source BSP (VBSP v19/v20/v21) inspector: header, lumps, limits, entities."""
 from __future__ import annotations
 
+import lzma
 import struct
 import zipfile
 import io as _io
@@ -40,8 +41,27 @@ def read_header(data: bytes) -> dict:
     return {"version": version, "revision": revision, "lumps": lumps}
 
 
+def _unlzma(raw: bytes) -> bytes:
+    """Source LZMA lump: 'LZMA', actualSize, lzmaSize, 5 props bytes, raw stream."""
+    actual = struct.unpack_from("<I", raw, 4)[0]
+    props = raw[12]
+    lc, rem = props % 9, props // 9
+    lp, pb = rem % 5, rem // 5
+    dict_size = struct.unpack_from("<I", raw, 13)[0]
+    flt = [{"id": lzma.FILTER_LZMA1, "dict_size": max(dict_size, 4096), "lc": lc, "lp": lp, "pb": pb}]
+    return lzma.LZMADecompressor(lzma.FORMAT_RAW, filters=flt).decompress(raw[17:], max_length=actual)
+
+
 def lump_bytes(data: bytes, lump: dict) -> bytes:
-    return data[lump["offset"]: lump["offset"] + lump["length"]]
+    raw = data[lump["offset"]: lump["offset"] + lump["length"]]
+    if lump.get("uncompressed") and raw[:4] == b"LZMA":
+        return _unlzma(raw)
+    return raw
+
+
+def lump_size(lump: dict) -> int:
+    """Logical (decompressed) size of a lump."""
+    return lump["uncompressed"] if lump.get("uncompressed") and lump["length"] else lump["length"]
 
 
 def entities(data: bytes, hdr: dict) -> list[dict]:
@@ -71,17 +91,17 @@ def analyze(path: str | Path) -> dict:
     counts = {}
     for name, (size, limit) in ELEMENTS.items():
         idx = next(i for i, n in LUMP_NAMES.items() if n == name)
-        ln = L[idx]["length"]
+        ln = lump_size(L[idx])
         if size:
             n = ln // size
             counts[name] = {"count": n, "limit": limit, "pct": round(100 * n / limit, 1)}
     ents = entities(data, hdr)
     io = logic.analyze(ents)
-    vis_len = L[4]["length"]
-    clusters = struct.unpack_from("<i", data, L[4]["offset"])[0] if vis_len >= 4 else 0
+    vis = lump_bytes(data, L[4])
+    clusters = struct.unpack_from("<i", vis, 0)[0] if len(vis) >= 4 else 0
     leafs_v = L[10]["version"]
     leaf_size = 56 if leafs_v == 0 else 32
-    leafs = L[10]["length"] // leaf_size
+    leafs = lump_size(L[10]) // leaf_size
     pak_len = L[40]["length"]
     pak_files = []
     if pak_len:
@@ -113,11 +133,11 @@ def analyze(path: str | Path) -> dict:
     return {
         "file": str(p), "size_mb": round(len(data) / 1048576, 2), "bsp_version": hdr["version"],
         "map_revision": hdr["revision"],
-        "lumps": {LUMP_NAMES.get(i, f"LUMP_{i}"): {"bytes": v["length"], "version": v["version"]}
+        "lumps": {LUMP_NAMES.get(i, f"LUMP_{i}"): {"bytes": lump_size(v), "version": v["version"]}
                   for i, v in L.items() if v["length"]},
         "element_counts": counts, "visibility": {"clusters": clusters, "leafs": leafs},
         "lighting": {"ldr": ldr_lighting, "hdr": hdr_lighting},
-        "lighting_bytes": L[8]["length"] + L[53]["length"],
+        "lighting_bytes": lump_size(L[8]) + lump_size(L[53]),
         "entity_summary": {"total": len(ents), "named": ent_names,
                            "prop_static_in_game_lump": None},
         "pakfile": {"bytes": pak_len, "file_types": pak_kinds, "count": len(pak_files)},
@@ -138,11 +158,17 @@ def static_prop_count(path: str | Path) -> int | None:
     for i in range(n):
         gid, flags, ver, off, ln = struct.unpack_from("<iHHii", data, base + 4 + i * 16)
         if gid == 0x73707270:  # 'sprp'
-            if ln == 0:
+            if ln == 0 or flags & 1:  # empty or LZMA-compressed lump: not decoded
                 return None
-            dict_n = struct.unpack_from("<i", data, off)[0]
-            p = off + 4 + dict_n * 128
-            leaf_n = struct.unpack_from("<i", data, p)[0]
-            p += 4 + leaf_n * 2
-            return struct.unpack_from("<i", data, p)[0]
+            try:
+                dict_n = struct.unpack_from("<i", data, off)[0]
+                p = off + 4 + dict_n * 128
+                leaf_n = struct.unpack_from("<i", data, p)[0]
+                p += 4 + leaf_n * 2
+            except struct.error:
+                return None
+            try:
+                return struct.unpack_from("<i", data, p)[0]
+            except struct.error:
+                return None
     return None
