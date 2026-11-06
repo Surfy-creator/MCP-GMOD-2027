@@ -1,0 +1,184 @@
+{
+ "map": "rp_downtown_triton",
+ "workshop_id": "1521649347",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 443.03,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 4340,
+  "leafs": 13196
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": false
+ },
+ "pakfile_files": 5357,
+ "pakfile_mb": 410.9,
+ "pak_types": {
+  "vmt": 1639,
+  "vtf": 1467,
+  "mdl": 380,
+  "vvd": 380,
+  "vtx": 1086,
+  "phy": 358,
+  "wav": 45,
+  "mp3": 1,
+  "ain": 1
+ },
+ "entities": 2577,
+ "named_entities": 557,
+ "faces": 25723,
+ "limits_max_pct": 90.3,
+ "limits_max_element": "BRUSHES",
+ "static_props": 2139,
+ "connections": 200,
+ "broken_connections": 7,
+ "naming": {
+  "named": 557,
+  "convention_ratio": 0.77,
+  "prefixes": {
+   "pd": 95,
+   "building": 74,
+   "apartment": 24,
+   "bar": 21,
+   "plazashop": 19,
+   "dyn": 18,
+   "res": 14,
+   "subway": 14,
+   "brick": 13,
+   "corner": 11,
+   "plazaapartment": 11,
+   "gmod": 11
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_breakable",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "logic_auto",
+  "logic_branch",
+  "logic_relay",
+  "point_template",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_remove",
+  "trigger_soundscape"
+ ],
+ "class_histogram_top": {
+  "light_spot": 816,
+  "infodecal": 293,
+  "light": 291,
+  "env_sprite": 172,
+  "prop_door_rotating": 164,
+  "prop_dynamic": 138,
+  "func_breakable_surf": 137,
+  "trigger_soundscape": 116,
+  "ambient_generic": 86,
+  "func_door_rotating": 51,
+  "env_soundscape": 44,
+  "func_door": 38,
+  "func_button": 30,
+  "func_brush": 25,
+  "func_areaportalwindow": 23,
+  "func_areaportal": 20,
+  "point_template": 18,
+  "point_spotlight": 16,
+  "func_breakable": 14,
+  "info_player_start": 12,
+  "func_movelinear": 9,
+  "func_dustmotes": 7,
+  "env_fire": 6,
+  "prop_physics_multiplayer": 6,
+  "trigger_multiple": 5,
+  "env_soundscape_triggerable": 4,
+  "trigger_remove": 3,
+  "env_smokestack": 3,
+  "logic_relay": 3,
+  "func_reflective_glass": 2
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 27082,
+   "limit": 65536,
+   "pct": 41.3
+  },
+  "FACES": {
+   "count": 25723,
+   "limit": 65536,
+   "pct": 39.3
+  },
+  "BRUSHES": {
+   "count": 7398,
+   "limit": 8192,
+   "pct": 90.3
+  },
+  "BRUSHSIDES": {
+   "count": 53189,
+   "limit": 65536,
+   "pct": 81.2
+  },
+  "TEXINFO": {
+   "count": 9612,
+   "limit": 12288,
+   "pct": 78.2
+  },
+  "NODES": {
+   "count": 12750,
+   "limit": 65536,
+   "pct": 19.5
+  },
+  "EDGES": {
+   "count": 129174,
+   "limit": 256000,
+   "pct": 50.5
+  },
+  "VERTEXES": {
+   "count": 46553,
+   "limit": 65536,
+   "pct": 71.0
+  },
+  "MODELS": {
+   "count": 445,
+   "limit": 1024,
+   "pct": 43.5
+  },
+  "DISPINFO": {
+   "count": 298,
+   "limit": 2048,
+   "pct": 14.6
+  },
+  "CUBEMAPS": {
+   "count": 188,
+   "limit": 1024,
+   "pct": 18.4
+  },
+  "OVERLAYS": {
+   "count": 122,
+   "limit": 512,
+   "pct": 23.8
+  },
+  "WORLDLIGHTS": {
+   "count": 1109,
+   "limit": 8192,
+   "pct": 13.5
+  },
+  "AREAPORTALS": {
+   "count": 87,
+   "limit": 1024,
+   "pct": 8.5
+  }
+ },
+ "advice": [
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 90.3% of its commonly cited limit.",
+  "BRUSHSIDES at 81.2% of its commonly cited limit.",
+  "TEXINFO at 78.2% of its commonly cited limit."
+ ]
+}

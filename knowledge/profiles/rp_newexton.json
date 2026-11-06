@@ -1,0 +1,184 @@
+{
+ "map": "rp_newexton",
+ "workshop_id": "925591798",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 225.68,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 7076,
+  "leafs": 24252
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": false
+ },
+ "pakfile_files": 3091,
+ "pakfile_mb": 193.9,
+ "pak_types": {
+  "vmt": 1122,
+  "vtf": 709,
+  "mdl": 212,
+  "vvd": 212,
+  "vtx": 639,
+  "phy": 193,
+  "wav": 3,
+  "ain": 1
+ },
+ "entities": 2221,
+ "named_entities": 996,
+ "faces": 37505,
+ "limits_max_pct": 97.6,
+ "limits_max_element": "BRUSHES",
+ "static_props": 3466,
+ "connections": 406,
+ "broken_connections": 2,
+ "naming": {
+  "named": 996,
+  "convention_ratio": 0.35,
+  "prefixes": {
+   "areaprefab": 79,
+   "yelloweven": 22,
+   "greeneven": 22,
+   "redeven": 22,
+   "telebutton0": 18,
+   "eledoor1": 18,
+   "telebutton1": 18,
+   "elesound": 18,
+   "eledoor0": 18,
+   "redodd": 11,
+   "yellowodd": 11,
+   "greenodd": 11
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportalwindow",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "func_tracktrain",
+  "game_text",
+  "logic_relay",
+  "math_counter",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_once",
+  "trigger_push",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light": 663,
+  "env_sprite": 296,
+  "prop_door_rotating": 213,
+  "light_spot": 194,
+  "func_brush": 145,
+  "func_areaportalwindow": 108,
+  "prop_dynamic": 108,
+  "func_door": 102,
+  "func_button": 53,
+  "keyframe_rope": 45,
+  "func_door_rotating": 37,
+  "info_player_start": 30,
+  "ambient_generic": 29,
+  "func_lod": 28,
+  "logic_relay": 24,
+  "trigger_multiple": 22,
+  "info_teleport_destination": 19,
+  "trigger_teleport": 19,
+  "info_landmark": 18,
+  "info_ladder": 16,
+  "trigger_once": 16,
+  "infodecal": 4,
+  "trigger_hurt": 3,
+  "env_smokestack": 3,
+  "math_counter": 3,
+  "move_rope": 3,
+  "path_track": 2,
+  "func_movelinear": 2,
+  "game_text": 2,
+  "worldspawn": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 31892,
+   "limit": 65536,
+   "pct": 48.7
+  },
+  "FACES": {
+   "count": 37505,
+   "limit": 65536,
+   "pct": 57.2
+  },
+  "BRUSHES": {
+   "count": 7996,
+   "limit": 8192,
+   "pct": 97.6
+  },
+  "BRUSHSIDES": {
+   "count": 58352,
+   "limit": 65536,
+   "pct": 89.0
+  },
+  "TEXINFO": {
+   "count": 10544,
+   "limit": 12288,
+   "pct": 85.8
+  },
+  "NODES": {
+   "count": 23822,
+   "limit": 65536,
+   "pct": 36.3
+  },
+  "EDGES": {
+   "count": 173200,
+   "limit": 256000,
+   "pct": 67.7
+  },
+  "VERTEXES": {
+   "count": 62645,
+   "limit": 65536,
+   "pct": 95.6
+  },
+  "MODELS": {
+   "count": 429,
+   "limit": 1024,
+   "pct": 41.9
+  },
+  "DISPINFO": {
+   "count": 126,
+   "limit": 2048,
+   "pct": 6.2
+  },
+  "CUBEMAPS": {
+   "count": 48,
+   "limit": 1024,
+   "pct": 4.7
+  },
+  "OVERLAYS": {
+   "count": 470,
+   "limit": 512,
+   "pct": 91.8
+  },
+  "WORLDLIGHTS": {
+   "count": 985,
+   "limit": 8192,
+   "pct": 12.0
+  },
+  "AREAPORTALS": {
+   "count": 217,
+   "limit": 1024,
+   "pct": 21.2
+  }
+ },
+ "advice": [
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 97.6% of its commonly cited limit.",
+  "BRUSHSIDES at 89.0% of its commonly cited limit.",
+  "TEXINFO at 85.8% of its commonly cited limit.",
+  "VERTEXES at 95.6% of its commonly cited limit.",
+  "OVERLAYS at 91.8% of its commonly cited limit."
+ ]
+}

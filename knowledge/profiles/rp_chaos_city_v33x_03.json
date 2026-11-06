@@ -1,0 +1,172 @@
+{
+ "map": "rp_chaos_city_v33x_03",
+ "workshop_id": "296403366",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 69.08,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 7759,
+  "leafs": 16799
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": false
+ },
+ "pakfile_files": 0,
+ "pakfile_mb": 0.0,
+ "pak_types": {},
+ "entities": 2726,
+ "named_entities": 692,
+ "faces": 30901,
+ "limits_max_pct": 82.7,
+ "limits_max_element": "BRUSHES",
+ "static_props": 3367,
+ "connections": 312,
+ "broken_connections": 0,
+ "naming": {
+  "named": 692,
+  "convention_ratio": 0.43,
+  "prefixes": {
+   "lightsignal": 138,
+   "elevator": 78,
+   "streetlight": 23,
+   "hospital": 12,
+   "bb": 8,
+   "syn": 7,
+   "cam": 5,
+   "but": 5,
+   "dl": 5,
+   "nexus": 4,
+   "bank": 4,
+   "control": 3
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_breakable",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_tracktrain",
+  "logic_auto",
+  "logic_case",
+  "logic_compare",
+  "logic_timer",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light_spot": 1210,
+  "prop_dynamic": 335,
+  "light": 276,
+  "env_sprite": 183,
+  "prop_door_rotating": 131,
+  "func_door_rotating": 71,
+  "func_button": 65,
+  "move_rope": 64,
+  "func_door": 59,
+  "prop_dynamic_override": 49,
+  "prop_physics_multiplayer": 40,
+  "prop_physics": 32,
+  "path_track": 30,
+  "keyframe_rope": 21,
+  "ambient_generic": 20,
+  "env_soundscape": 18,
+  "func_areaportal": 18,
+  "func_brush": 17,
+  "infodecal": 15,
+  "trigger_hurt": 6,
+  "info_ladder_dismount": 6,
+  "info_player_start": 5,
+  "point_camera": 5,
+  "trigger_multiple": 3,
+  "env_steam": 3,
+  "func_monitor": 3,
+  "env_smokestack": 3,
+  "func_vehicleclip": 3,
+  "logic_auto": 2,
+  "func_breakable": 2
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 26652,
+   "limit": 65536,
+   "pct": 40.7
+  },
+  "FACES": {
+   "count": 30901,
+   "limit": 65536,
+   "pct": 47.2
+  },
+  "BRUSHES": {
+   "count": 6771,
+   "limit": 8192,
+   "pct": 82.7
+  },
+  "BRUSHSIDES": {
+   "count": 48497,
+   "limit": 65536,
+   "pct": 74.0
+  },
+  "TEXINFO": {
+   "count": 8408,
+   "limit": 12288,
+   "pct": 68.4
+  },
+  "NODES": {
+   "count": 16561,
+   "limit": 65536,
+   "pct": 25.3
+  },
+  "EDGES": {
+   "count": 138063,
+   "limit": 256000,
+   "pct": 53.9
+  },
+  "VERTEXES": {
+   "count": 52112,
+   "limit": 65536,
+   "pct": 79.5
+  },
+  "MODELS": {
+   "count": 237,
+   "limit": 1024,
+   "pct": 23.1
+  },
+  "DISPINFO": {
+   "count": 1307,
+   "limit": 2048,
+   "pct": 63.8
+  },
+  "CUBEMAPS": {
+   "count": 201,
+   "limit": 1024,
+   "pct": 19.6
+  },
+  "OVERLAYS": {
+   "count": 343,
+   "limit": 512,
+   "pct": 67.0
+  },
+  "WORLDLIGHTS": {
+   "count": 1488,
+   "limit": 8192,
+   "pct": 18.2
+  },
+  "AREAPORTALS": {
+   "count": 39,
+   "limit": 1024,
+   "pct": 3.8
+  }
+ },
+ "advice": [
+  "Many prop_dynamic: prefer prop_static where no animation/physics is needed.",
+  "BRUSHES at 82.7% of its commonly cited limit.",
+  "VERTEXES at 79.5% of its commonly cited limit."
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "map": "rp_rockford_life_v1",
+ "workshop_id": "1349675783",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 68.65,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 4421,
+  "leafs": 8885
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 660,
+ "pakfile_mb": 7.4,
+ "pak_types": {
+  "vmt": 486,
+  "vtf": 174
+ },
+ "entities": 2047,
+ "named_entities": 356,
+ "faces": 23887,
+ "limits_max_pct": 62.0,
+ "limits_max_element": "VERTEXES",
+ "static_props": 1603,
+ "connections": 172,
+ "broken_connections": 22,
+ "naming": {
+  "named": 356,
+  "convention_ratio": 0.28,
+  "prefixes": {
+   "lightsignal": 48,
+   "milbase1": 22,
+   "milbase2": 19,
+   "spawn": 6,
+   "tiecard": 2,
+   "rl": 2,
+   "club": 2,
+   "monitor": 1,
+   "rotating": 1,
+   "dr": 1,
+   "dr1": 1,
+   "dyn1": 1
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "func_rotating",
+  "logic_auto",
+  "logic_compare",
+  "logic_relay",
+  "logic_timer",
+  "prop_door_rotating",
+  "trigger_multiple",
+  "trigger_push",
+  "trigger_remove",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light_spot": 585,
+  "prop_dynamic": 356,
+  "infodecal": 291,
+  "light": 282,
+  "env_sprite": 140,
+  "prop_door_rotating": 127,
+  "info_player_start": 50,
+  "func_door_rotating": 45,
+  "func_button": 43,
+  "func_door": 33,
+  "keyframe_rope": 13,
+  "point_spotlight": 12,
+  "ambient_generic": 7,
+  "trigger_multiple": 6,
+  "prop_physics": 6,
+  "prop_physics_multiplayer": 5,
+  "env_smokestack": 5,
+  "env_soundscape": 4,
+  "logic_relay": 3,
+  "func_rotating": 3,
+  "info_teleport_destination": 3,
+  "trigger_teleport": 3,
+  "move_rope": 2,
+  "trigger_remove": 2,
+  "env_fire": 2,
+  "info_target": 2,
+  "info_ladder": 2,
+  "worldspawn": 1,
+  "logic_compare": 1,
+  "env_firesource": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 18216,
+   "limit": 65536,
+   "pct": 27.8
+  },
+  "FACES": {
+   "count": 23887,
+   "limit": 65536,
+   "pct": 36.4
+  },
+  "BRUSHES": {
+   "count": 5073,
+   "limit": 8192,
+   "pct": 61.9
+  },
+  "BRUSHSIDES": {
+   "count": 35074,
+   "limit": 65536,
+   "pct": 53.5
+  },
+  "TEXINFO": {
+   "count": 5323,
+   "limit": 12288,
+   "pct": 43.3
+  },
+  "NODES": {
+   "count": 8745,
+   "limit": 65536,
+   "pct": 13.3
+  },
+  "EDGES": {
+   "count": 114548,
+   "limit": 256000,
+   "pct": 44.7
+  },
+  "VERTEXES": {
+   "count": 40630,
+   "limit": 65536,
+   "pct": 62.0
+  },
+  "MODELS": {
+   "count": 139,
+   "limit": 1024,
+   "pct": 13.6
+  },
+  "DISPINFO": {
+   "count": 171,
+   "limit": 2048,
+   "pct": 8.3
+  },
+  "CUBEMAPS": {
+   "count": 88,
+   "limit": 1024,
+   "pct": 8.6
+  },
+  "OVERLAYS": {
+   "count": 6,
+   "limit": 512,
+   "pct": 1.2
+  },
+  "WORLDLIGHTS": {
+   "count": 869,
+   "limit": 8192,
+   "pct": 10.6
+  },
+  "AREAPORTALS": {
+   "count": 1,
+   "limit": 1024,
+   "pct": 0.1
+  }
+ },
+ "advice": [
+  "Many prop_dynamic: prefer prop_static where no animation/physics is needed."
+ ]
+}

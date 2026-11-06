@@ -1,0 +1,163 @@
+{
+ "map": "rp_hoolywood_day",
+ "workshop_id": "1193674667",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 99.38,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 3791,
+  "leafs": 9481
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 481,
+ "pakfile_mb": 57.5,
+ "pak_types": {
+  "vmt": 200,
+  "vtf": 158,
+  "mdl": 23,
+  "vtx": 53,
+  "phy": 23,
+  "vvd": 23,
+  "ain": 1
+ },
+ "entities": 2358,
+ "named_entities": 131,
+ "faces": 22211,
+ "limits_max_pct": 72.8,
+ "limits_max_element": "BRUSHES",
+ "static_props": 1467,
+ "connections": 28,
+ "broken_connections": 0,
+ "naming": {
+  "named": 131,
+  "convention_ratio": 0.29,
+  "prefixes": {
+   "breen": 18,
+   "house2": 11,
+   "house1": 6,
+   "house3": 3,
+   "trigger": 1
+  }
+ },
+ "logic_classes": [
+  "func_areaportal",
+  "func_breakable",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_tracktrain",
+  "game_text",
+  "logic_auto",
+  "prop_door_rotating",
+  "trigger_multiple",
+  "trigger_soundscape"
+ ],
+ "class_histogram_top": {
+  "infodecal": 435,
+  "light_spot": 399,
+  "env_sprite": 371,
+  "light": 350,
+  "prop_door_rotating": 262,
+  "prop_physics_multiplayer": 185,
+  "trigger_soundscape": 156,
+  "info_player_start": 64,
+  "prop_dynamic_override": 60,
+  "func_breakable": 12,
+  "func_button": 12,
+  "func_areaportal": 7,
+  "info_ladder": 6,
+  "func_door_rotating": 5,
+  "info_target": 5,
+  "func_occluder": 4,
+  "path_track": 4,
+  "env_soundscape_triggerable": 4,
+  "func_tracktrain": 2,
+  "worldspawn": 1,
+  "env_wind": 1,
+  "shadow_control": 1,
+  "water_lod_control": 1,
+  "env_fog_controller": 1,
+  "weapon_stunstick": 1,
+  "env_splash": 1,
+  "env_tonemap_controller": 1,
+  "logic_auto": 1,
+  "light_environment": 1,
+  "prop_ragdoll": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 12170,
+   "limit": 65536,
+   "pct": 18.6
+  },
+  "FACES": {
+   "count": 22211,
+   "limit": 65536,
+   "pct": 33.9
+  },
+  "BRUSHES": {
+   "count": 5965,
+   "limit": 8192,
+   "pct": 72.8
+  },
+  "BRUSHSIDES": {
+   "count": 41511,
+   "limit": 65536,
+   "pct": 63.3
+  },
+  "TEXINFO": {
+   "count": 7412,
+   "limit": 12288,
+   "pct": 60.3
+  },
+  "NODES": {
+   "count": 9290,
+   "limit": 65536,
+   "pct": 14.2
+  },
+  "EDGES": {
+   "count": 103279,
+   "limit": 256000,
+   "pct": 40.3
+  },
+  "VERTEXES": {
+   "count": 33595,
+   "limit": 65536,
+   "pct": 51.3
+  },
+  "MODELS": {
+   "count": 190,
+   "limit": 1024,
+   "pct": 18.6
+  },
+  "DISPINFO": {
+   "count": 117,
+   "limit": 2048,
+   "pct": 5.7
+  },
+  "CUBEMAPS": {
+   "count": 0,
+   "limit": 1024,
+   "pct": 0.0
+  },
+  "OVERLAYS": {
+   "count": 2,
+   "limit": 512,
+   "pct": 0.4
+  },
+  "WORLDLIGHTS": {
+   "count": 751,
+   "limit": 8192,
+   "pct": 9.2
+  },
+  "AREAPORTALS": {
+   "count": 15,
+   "limit": 1024,
+   "pct": 1.5
+  }
+ },
+ "advice": []
+}

@@ -1,0 +1,189 @@
+{
+ "map": "rp_rockford_open",
+ "workshop_id": "625091269",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 311.7,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 3723,
+  "leafs": 11737
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 3617,
+ "pakfile_mb": 165.1,
+ "pak_types": {
+  "vmt": 1713,
+  "vtf": 991,
+  "wav": 26,
+  "mdl": 151,
+  "vvd": 151,
+  "vtx": 438,
+  "phy": 146,
+  "ain": 1
+ },
+ "entities": 3129,
+ "named_entities": 938,
+ "faces": 33083,
+ "limits_max_pct": 99.5,
+ "limits_max_element": "BRUSHES",
+ "static_props": 3940,
+ "connections": 704,
+ "broken_connections": 0,
+ "naming": {
+  "named": 938,
+  "convention_ratio": 0.19,
+  "prefixes": {
+   "dyn": 31,
+   "bt": 18,
+   "brush": 17,
+   "dr": 16,
+   "brush1": 9,
+   "rl": 8,
+   "relay": 8,
+   "dr2": 6,
+   "dr2b": 6,
+   "drb": 6,
+   "door1": 6,
+   "phy": 4
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "env_fade",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_breakable",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "func_rotating",
+  "game_text",
+  "logic_auto",
+  "logic_case",
+  "logic_compare",
+  "logic_relay",
+  "logic_timer",
+  "math_counter",
+  "point_template",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_push"
+ ],
+ "class_histogram_top": {
+  "light_spot": 876,
+  "infodecal": 787,
+  "prop_dynamic": 335,
+  "prop_door_rotating": 303,
+  "light": 182,
+  "keyframe_rope": 136,
+  "env_sprite": 132,
+  "func_door": 54,
+  "func_brush": 41,
+  "func_button": 41,
+  "func_door_rotating": 35,
+  "func_occluder": 34,
+  "info_player_start": 20,
+  "trigger_multiple": 18,
+  "logic_relay": 16,
+  "move_rope": 14,
+  "func_areaportalwindow": 11,
+  "func_illusionary": 11,
+  "ambient_generic": 8,
+  "math_counter": 7,
+  "trigger_push": 5,
+  "logic_auto": 5,
+  "func_movelinear": 4,
+  "logic_compare": 4,
+  "func_physbox": 4,
+  "prop_physics": 4,
+  "env_texturetoggle": 4,
+  "trigger_hurt": 3,
+  "func_areaportal": 3,
+  "func_breakable": 3
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 24314,
+   "limit": 65536,
+   "pct": 37.1
+  },
+  "FACES": {
+   "count": 33083,
+   "limit": 65536,
+   "pct": 50.5
+  },
+  "BRUSHES": {
+   "count": 8152,
+   "limit": 8192,
+   "pct": 99.5
+  },
+  "BRUSHSIDES": {
+   "count": 57029,
+   "limit": 65536,
+   "pct": 87.0
+  },
+  "TEXINFO": {
+   "count": 7771,
+   "limit": 12288,
+   "pct": 63.2
+  },
+  "NODES": {
+   "count": 11511,
+   "limit": 65536,
+   "pct": 17.6
+  },
+  "EDGES": {
+   "count": 161248,
+   "limit": 256000,
+   "pct": 63.0
+  },
+  "VERTEXES": {
+   "count": 63331,
+   "limit": 65536,
+   "pct": 96.6
+  },
+  "MODELS": {
+   "count": 225,
+   "limit": 1024,
+   "pct": 22.0
+  },
+  "DISPINFO": {
+   "count": 746,
+   "limit": 2048,
+   "pct": 36.4
+  },
+  "CUBEMAPS": {
+   "count": 321,
+   "limit": 1024,
+   "pct": 31.3
+  },
+  "OVERLAYS": {
+   "count": 211,
+   "limit": 512,
+   "pct": 41.2
+  },
+  "WORLDLIGHTS": {
+   "count": 1060,
+   "limit": 8192,
+   "pct": 12.9
+  },
+  "AREAPORTALS": {
+   "count": 29,
+   "limit": 1024,
+   "pct": 2.8
+  }
+ },
+ "advice": [
+  "Many prop_dynamic: prefer prop_static where no animation/physics is needed.",
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 99.5% of its commonly cited limit.",
+  "BRUSHSIDES at 87.0% of its commonly cited limit.",
+  "VERTEXES at 96.6% of its commonly cited limit."
+ ]
+}

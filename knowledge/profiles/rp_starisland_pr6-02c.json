@@ -1,0 +1,181 @@
+{
+ "map": "rp_starisland_pr6-02c",
+ "workshop_id": "1782967195",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 187.07,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 5797,
+  "leafs": 19899
+ },
+ "lighting": {
+  "ldr": false,
+  "hdr": true
+ },
+ "pakfile_files": 9098,
+ "pakfile_mb": 80.6,
+ "pak_types": {
+  "vmt": 1272,
+  "vtf": 1117,
+  "vhv": 6706,
+  "ppl": 3
+ },
+ "entities": 5189,
+ "named_entities": 826,
+ "faces": 35108,
+ "limits_max_pct": 110.4,
+ "limits_max_element": "BRUSHES",
+ "static_props": 6825,
+ "connections": 225,
+ "broken_connections": 3,
+ "naming": {
+  "named": 826,
+  "convention_ratio": 0.54,
+  "prefixes": {
+   "mazebank": 149,
+   "little-beach": 50,
+   "ocean-view-terrase-details": 49,
+   "spawn": 39,
+   "door": 21,
+   "mairie": 20,
+   "shops2": 13,
+   "save4less": 11,
+   "doors": 10,
+   "train": 7,
+   "path1": 7,
+   "path2": 7
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_breakable",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_rotating",
+  "func_tracktrain",
+  "logic_auto",
+  "logic_branch",
+  "logic_relay",
+  "logic_timer",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light": 1163,
+  "light_spot": 1001,
+  "infodecal": 736,
+  "prop_dynamic": 430,
+  "prop_door_rotating": 259,
+  "env_sprite": 217,
+  "prop_physics_multiplayer": 204,
+  "point_spotlight": 201,
+  "func_breakable": 148,
+  "prop_dynamic_override": 138,
+  "prop_physics": 123,
+  "func_door_rotating": 87,
+  "info_node": 66,
+  "func_button": 51,
+  "ambient_generic": 43,
+  "func_areaportal": 39,
+  "info_teleport_destination": 38,
+  "func_door": 33,
+  "func_areaportalwindow": 29,
+  "func_illusionary": 29,
+  "prop_physics_override": 18,
+  "info_player_start": 17,
+  "path_track": 14,
+  "func_rotating": 12,
+  "trigger_multiple": 12,
+  "keyframe_rope": 8,
+  "func_brush": 8,
+  "func_tracktrain": 7,
+  "move_rope": 7,
+  "func_occluder": 6
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 31804,
+   "limit": 65536,
+   "pct": 48.5
+  },
+  "FACES": {
+   "count": 35108,
+   "limit": 65536,
+   "pct": 53.6
+  },
+  "BRUSHES": {
+   "count": 9047,
+   "limit": 8192,
+   "pct": 110.4
+  },
+  "BRUSHSIDES": {
+   "count": 62263,
+   "limit": 65536,
+   "pct": 95.0
+  },
+  "TEXINFO": {
+   "count": 10126,
+   "limit": 12288,
+   "pct": 82.4
+  },
+  "NODES": {
+   "count": 19492,
+   "limit": 65536,
+   "pct": 29.7
+  },
+  "EDGES": {
+   "count": 163428,
+   "limit": 256000,
+   "pct": 63.8
+  },
+  "VERTEXES": {
+   "count": 62629,
+   "limit": 65536,
+   "pct": 95.6
+  },
+  "MODELS": {
+   "count": 406,
+   "limit": 1024,
+   "pct": 39.6
+  },
+  "DISPINFO": {
+   "count": 545,
+   "limit": 2048,
+   "pct": 26.6
+  },
+  "CUBEMAPS": {
+   "count": 561,
+   "limit": 1024,
+   "pct": 54.8
+  },
+  "OVERLAYS": {
+   "count": 243,
+   "limit": 512,
+   "pct": 47.5
+  },
+  "WORLDLIGHTS": {
+   "count": 0,
+   "limit": 8192,
+   "pct": 0.0
+  },
+  "AREAPORTALS": {
+   "count": 137,
+   "limit": 1024,
+   "pct": 13.4
+  }
+ },
+ "advice": [
+  "Many prop_dynamic: prefer prop_static where no animation/physics is needed.",
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 110.4% of its commonly cited limit.",
+  "BRUSHSIDES at 95.0% of its commonly cited limit.",
+  "TEXINFO at 82.4% of its commonly cited limit.",
+  "VERTEXES at 95.6% of its commonly cited limit."
+ ]
+}

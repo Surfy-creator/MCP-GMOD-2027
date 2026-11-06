@@ -1,0 +1,177 @@
+{
+ "map": "rp_downtown_2017",
+ "workshop_id": "875594189",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 292.21,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 5769,
+  "leafs": 13830
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 3391,
+ "pakfile_mb": 242.6,
+ "pak_types": {
+  "vmt": 1126,
+  "vtf": 748,
+  "mdl": 259,
+  "vtx": 766,
+  "vvd": 259,
+  "phy": 231,
+  "wav": 1,
+  "ain": 1
+ },
+ "entities": 1856,
+ "named_entities": 174,
+ "faces": 29020,
+ "limits_max_pct": 85.9,
+ "limits_max_element": "BRUSHES",
+ "static_props": 1149,
+ "connections": 67,
+ "broken_connections": 13,
+ "naming": {
+  "named": 174,
+  "convention_ratio": 0.24,
+  "prefixes": {
+   "ventilador": 13,
+   "varanda": 8,
+   "building": 3,
+   "res": 3,
+   "new2": 3,
+   "warehouse1": 3,
+   "fog": 2,
+   "industrial": 2,
+   "anti": 2,
+   "shadow": 2,
+   "sound": 1,
+   "p1": 1
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_breakable",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "game_text",
+  "logic_auto",
+  "prop_door_rotating",
+  "trigger_physics_trap",
+  "trigger_push",
+  "trigger_remove"
+ ],
+ "class_histogram_top": {
+  "prop_dynamic": 606,
+  "light": 322,
+  "light_spot": 300,
+  "infodecal": 143,
+  "func_door": 91,
+  "prop_door_rotating": 84,
+  "func_breakable_surf": 54,
+  "env_sprite": 49,
+  "func_areaportal": 47,
+  "func_button": 24,
+  "func_door_rotating": 23,
+  "prop_physics_multiplayer": 20,
+  "func_breakable": 16,
+  "info_player_start": 14,
+  "func_areaportalwindow": 12,
+  "point_spotlight": 10,
+  "env_smokestack": 8,
+  "logic_auto": 4,
+  "ambient_generic": 4,
+  "env_fire": 4,
+  "env_fog_controller": 2,
+  "env_tonemap_controller": 2,
+  "light_environment": 2,
+  "env_skypaint": 2,
+  "water_lod_control": 2,
+  "shadow_control": 2,
+  "worldspawn": 1,
+  "info_target": 1,
+  "game_text": 1,
+  "trigger_physics_trap": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 14756,
+   "limit": 65536,
+   "pct": 22.5
+  },
+  "FACES": {
+   "count": 29020,
+   "limit": 65536,
+   "pct": 44.3
+  },
+  "BRUSHES": {
+   "count": 7037,
+   "limit": 8192,
+   "pct": 85.9
+  },
+  "BRUSHSIDES": {
+   "count": 47529,
+   "limit": 65536,
+   "pct": 72.5
+  },
+  "TEXINFO": {
+   "count": 6137,
+   "limit": 12288,
+   "pct": 49.9
+  },
+  "NODES": {
+   "count": 13617,
+   "limit": 65536,
+   "pct": 20.8
+  },
+  "EDGES": {
+   "count": 133219,
+   "limit": 256000,
+   "pct": 52.0
+  },
+  "VERTEXES": {
+   "count": 47823,
+   "limit": 65536,
+   "pct": 73.0
+  },
+  "MODELS": {
+   "count": 212,
+   "limit": 1024,
+   "pct": 20.7
+  },
+  "DISPINFO": {
+   "count": 82,
+   "limit": 2048,
+   "pct": 4.0
+  },
+  "CUBEMAPS": {
+   "count": 73,
+   "limit": 1024,
+   "pct": 7.1
+  },
+  "OVERLAYS": {
+   "count": 0,
+   "limit": 512,
+   "pct": 0.0
+  },
+  "WORLDLIGHTS": {
+   "count": 642,
+   "limit": 8192,
+   "pct": 7.8
+  },
+  "AREAPORTALS": {
+   "count": 119,
+   "limit": 1024,
+   "pct": 11.6
+  }
+ },
+ "advice": [
+  "Many prop_dynamic: prefer prop_static where no animation/physics is needed.",
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 85.9% of its commonly cited limit."
+ ]
+}

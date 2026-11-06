@@ -31,5 +31,19 @@ Do not assert facts about a specific map from memory: profile it.
 - Visibility strategy differs: Florida 25 areaportals + 3 cubemaps (cheap, flat reflections); UnionCity 227 areaportals + 361 cubemaps (heavy interior culling and reflections, at the cost of a 749 MB file mostly embedded content). A 300-700 MB BSP is a download/join-time problem: prefer a Workshop addon for content.
 - Logic is door/light centric (few hundred I/O links; `logic_auto`, `logic_relay`, `logic_timer`, `path_track` for vehicles). Naming discipline varies a lot (0.12 to 0.97 of named entities sharing a prefix): treat Florida's scheme as the model.
 
-## Still to profile (need the file locally)
-32 collection items are not on this machine. IDs are in `knowledge/reference_maps.json`. Subscribe or download them, then: `python mcp/profile_gma.py knowledge/profiles <path-to-gma-or-bin>`.
+## Corpus statistics (37 profiled BSPs, all 36 collection items; `knowledge/profiles/SUMMARY.json`)
+| Metric | min | p25 | median | p75 | max |
+|---|---|---|---|---|---|
+| BSP size (MB) | 52 | 99 | 187 | 316 | 935 |
+| Faces | 21.4k | 27.1k | 31.7k | 33.5k | 37.9k |
+| Vis clusters | 1379 | 3846 | 4887 | 7658 | 11112 |
+| Entities | 1122 | 2101 | 2749 | 3129 | 5189 |
+| Static props | 1149 | 2214 | 3418 | 3940 | 6825 |
+| Cubemaps | 0 | 88 | 188 | 303 | 561 |
+| Areaportals | 1 | 19 | 87 | 205 | 373 |
+| Embedded pak (MB) | 0 | 22 | 110 | 262 | 813 |
+| I/O links | 28 | 136 | 216 | 406 | 1060 |
+| Lights | 305 | 810 | 990 | 1219 | 2164 |
+| Doors (all door classes) | 175 | 253 | 312 | 360 | 552 |
+
+Reading: face count is remarkably tight (most maps 27-34k), so detail budget is spent on props/lighting/cubemaps instead; file size is driven almost entirely by embedded content, not geometry. A new RP map in the same league: ~30k faces, ~3k entities, ~1k lights, ~300 doors, a few thousand static props, areaportals in the tens to low hundreds. Use `benchmark_map` to see where a map sits. Some profiled files are alternate versions of one map (e.g. two Starisland BSPs), so "37" counts BSPs, not distinct maps; static props are missing for the one map whose game lump is compressed.

@@ -11,7 +11,7 @@ A Claude skill plus an MCP server for **Garry's Mod mapping with Hammer / Hammer
 | `knowledge/profiles/` | Numeric profiles (no assets) of `gm_construct` and `gm_flatgrass`, for benchmarking |
 
 ## MCP tools
-`detect_environment`, `fgd_search`, `fgd_entity` (full inherited keys/inputs/outputs from your installed FGDs), `vmf_analyze`, `bsp_analyze` (lumps, limit usage, vis clusters, lighting, pakfile, static props), `io_graph` (trigger/logic graph, broken connections), `trigger_recipe`, `mapping_rules`, `rp_scorecard`, `compile_plan`, `compile_run` (needs `confirm=true`), `compile_log_parse`, `reference_maps`, `reference_profiles`.
+`detect_environment`, `fgd_search`, `fgd_entity` (full inherited keys/inputs/outputs from your installed FGDs), `vmf_analyze`, `bsp_analyze` (lumps, limit usage, vis clusters, lighting, pakfile, static props), `io_graph` (trigger/logic graph, broken connections), `trigger_recipe`, `mapping_rules`, `rp_scorecard`, `compile_plan`, `compile_run` (needs `confirm=true`), `compile_log_parse`, `reference_maps`, `reference_profiles`, `corpus_summary`, `benchmark_map` (percentile-rank a BSP against the 37-BSP RP corpus).
 
 ## Install
 ```bash
@@ -23,7 +23,7 @@ Register in Claude Code (project `.mcp.json` is included) or run `python -m gmod
 ## Honest scope
 - **"Training" is not model training.** The server encodes vetted rules and measures real maps; benchmarks come from maps you profile locally.
 - **Reverse engineering** was static and non-invasive (file layout, config files, printable strings, BSP header/lump parsing). No decompilation, no redistribution of Valve or third-party binaries/FGDs/maps.
-- **Third-party maps** (the Workshop collection) are not downloaded or bundled. 3 of the 36 (Florida v2, Truenorth, UnionCity Day) were already in the local Steam cache and are profiled in `knowledge/profiles/` (numbers only). For others: subscribe, then `python mcp/profile_gma.py knowledge/profiles <gma-or-bin>`.
+- **Third-party maps** (the Workshop collection) are not downloaded or bundled. all 36 collection items were downloaded locally (anonymous steamcmd), analysed, and deleted from the repo scope: only numbers are committed (`knowledge/profiles/`, `SUMMARY.json`). To add maps: `python mcp/profile_gma.py knowledge/profiles <gma-or-bin>`.
 - Engine limits printed by `bsp_analyze` are commonly cited reference values; verify for your branch.
 - Not tested: `compile_run` against a real VMF, Hammer++ GUI automation (Hammer has no API; work on the VMF).
 

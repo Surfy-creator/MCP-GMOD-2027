@@ -1,0 +1,173 @@
+{
+ "map": "rp_pinescity_v1x",
+ "workshop_id": "929618625",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 221.97,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 4884,
+  "leafs": 12697
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": false
+ },
+ "pakfile_files": 2325,
+ "pakfile_mb": 144.7,
+ "pak_types": {
+  "vmt": 895,
+  "vtf": 659,
+  "?": 1,
+  "vtx": 316,
+  "mdl": 153,
+  "vvd": 153,
+  "phy": 148
+ },
+ "entities": 1278,
+ "named_entities": 625,
+ "faces": 27929,
+ "limits_max_pct": 78.6,
+ "limits_max_element": "TEXINFO",
+ "static_props": 2214,
+ "connections": 179,
+ "broken_connections": 0,
+ "naming": {
+  "named": 625,
+  "convention_ratio": 0.77,
+  "prefixes": {
+   "lightsignal": 120,
+   "shop": 49,
+   "entrepo": 39,
+   "cop": 31,
+   "button": 30,
+   "park": 27,
+   "pav": 25,
+   "business": 23,
+   "trafficlight": 20,
+   "lights": 16,
+   "hdv": 12,
+   "bat": 12
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_tracktrain",
+  "logic_auto",
+  "logic_relay",
+  "logic_timer",
+  "prop_door_rotating",
+  "trigger_multiple"
+ ],
+ "class_histogram_top": {
+  "light": 579,
+  "prop_dynamic_override": 142,
+  "env_sprite": 120,
+  "prop_door_rotating": 95,
+  "func_door": 90,
+  "func_button": 56,
+  "infodecal": 46,
+  "prop_dynamic": 35,
+  "func_door_rotating": 30,
+  "ambient_generic": 12,
+  "info_player_start": 12,
+  "light_spot": 9,
+  "trigger_multiple": 8,
+  "point_message": 7,
+  "env_soundscape": 7,
+  "path_track": 4,
+  "env_smokestack": 4,
+  "logic_timer": 4,
+  "func_tracktrain": 2,
+  "logic_auto": 2,
+  "env_shake": 2,
+  "logic_relay": 2,
+  "worldspawn": 1,
+  "env_sun": 1,
+  "water_lod_control": 1,
+  "env_fog_controller": 1,
+  "env_wind": 1,
+  "env_tonemap_controller": 1,
+  "shadow_control": 1,
+  "color_correction": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 14920,
+   "limit": 65536,
+   "pct": 22.8
+  },
+  "FACES": {
+   "count": 27929,
+   "limit": 65536,
+   "pct": 42.6
+  },
+  "BRUSHES": {
+   "count": 6300,
+   "limit": 8192,
+   "pct": 76.9
+  },
+  "BRUSHSIDES": {
+   "count": 43038,
+   "limit": 65536,
+   "pct": 65.7
+  },
+  "TEXINFO": {
+   "count": 9654,
+   "limit": 12288,
+   "pct": 78.6
+  },
+  "NODES": {
+   "count": 12509,
+   "limit": 65536,
+   "pct": 19.1
+  },
+  "EDGES": {
+   "count": 129774,
+   "limit": 256000,
+   "pct": 50.7
+  },
+  "VERTEXES": {
+   "count": 47469,
+   "limit": 65536,
+   "pct": 72.4
+  },
+  "MODELS": {
+   "count": 187,
+   "limit": 1024,
+   "pct": 18.3
+  },
+  "DISPINFO": {
+   "count": 1084,
+   "limit": 2048,
+   "pct": 52.9
+  },
+  "CUBEMAPS": {
+   "count": 90,
+   "limit": 1024,
+   "pct": 8.8
+  },
+  "OVERLAYS": {
+   "count": 112,
+   "limit": 512,
+   "pct": 21.9
+  },
+  "WORLDLIGHTS": {
+   "count": 590,
+   "limit": 8192,
+   "pct": 7.2
+  },
+  "AREAPORTALS": {
+   "count": 1,
+   "limit": 1024,
+   "pct": 0.1
+  }
+ },
+ "advice": [
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 76.9% of its commonly cited limit.",
+  "TEXINFO at 78.6% of its commonly cited limit."
+ ]
+}

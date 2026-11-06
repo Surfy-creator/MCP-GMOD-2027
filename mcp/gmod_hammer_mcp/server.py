@@ -6,7 +6,7 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
-from . import bsp, compile as comp, env, fgd, knowledge, logic, vmf
+from . import bsp, compile as comp, corpus, env, fgd, knowledge, logic, vmf
 
 ROOT = Path(__file__).resolve().parents[2]
 mcp = FastMCP("gmod-hammer")
@@ -173,6 +173,25 @@ def reference_profiles() -> dict:
         d = json.loads(f.read_text(encoding="utf-8"))
         out[f.stem] = {k: d.get(k) for k in ("size_mb", "visibility", "lighting", "pakfile_files", "entities", "faces", "limits_max_pct", "static_props", "connections")}
     return out
+
+
+@mcp.tool()
+def corpus_summary() -> dict:
+    """Min/quartiles/median/max of 37 profiled DarkRP-style maps (size, faces, clusters, entities, props, cubemaps, areaportals, pak, I/O, lights, doors)."""
+    return corpus.summary()
+
+
+@mcp.tool()
+def benchmark_map(bsp_path: str) -> dict:
+    """Percentile-rank a compiled BSP against the profiled RP corpus on each metric (heuristic: a high rank is not 'bad')."""
+    import tempfile  # noqa: F401  (profile built in-memory, nothing written)
+    r = bsp.analyze(bsp_path)
+    io_ = r["io"]
+    prof = {"size_mb": r["size_mb"], "faces": r["element_counts"]["FACES"]["count"], "visibility": r["visibility"],
+            "entities": r["entity_summary"]["total"], "static_props": bsp.static_prop_count(bsp_path),
+            "element_counts": r["element_counts"], "pakfile_mb": round(r["pakfile"]["bytes"] / 1048576, 1),
+            "connections": io_["connections"], "class_histogram_top": io_["class_histogram"]}
+    return corpus.rank(prof)
 
 
 def main() -> None:

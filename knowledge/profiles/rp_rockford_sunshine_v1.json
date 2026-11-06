@@ -1,0 +1,169 @@
+{
+ "map": "rp_rockford_sunshine_v1",
+ "workshop_id": "1248533355",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 350.14,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 3846,
+  "leafs": 16097
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 4218,
+ "pakfile_mb": 268.5,
+ "pak_types": {
+  "vmt": 1678,
+  "vtf": 1214,
+  "wav": 9,
+  "mdl": 214,
+  "vvd": 214,
+  "vtx": 686,
+  "phy": 202,
+  "ain": 1
+ },
+ "entities": 1933,
+ "named_entities": 459,
+ "faces": 35260,
+ "limits_max_pct": 87.7,
+ "limits_max_element": "VERTEXES",
+ "static_props": 2780,
+ "connections": 107,
+ "broken_connections": 9,
+ "naming": {
+  "named": 459,
+  "convention_ratio": 0.0,
+  "prefixes": {
+   "sun": 1
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_breakable",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "logic_auto",
+  "logic_compare",
+  "logic_timer",
+  "point_template",
+  "prop_door_rotating",
+  "trigger_multiple",
+  "trigger_push",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light_spot": 653,
+  "infodecal": 505,
+  "prop_door_rotating": 193,
+  "light": 157,
+  "info_teleport_destination": 138,
+  "env_sprite": 88,
+  "info_player_start": 54,
+  "keyframe_rope": 36,
+  "func_door_rotating": 28,
+  "func_door": 15,
+  "trigger_multiple": 14,
+  "func_button": 14,
+  "trigger_teleport": 6,
+  "move_rope": 5,
+  "ambient_generic": 5,
+  "func_brush": 2,
+  "point_spotlight": 2,
+  "worldspawn": 1,
+  "func_movelinear": 1,
+  "logic_compare": 1,
+  "sky_camera": 1,
+  "env_fog_controller": 1,
+  "env_tonemap_controller": 1,
+  "logic_auto": 1,
+  "shadow_control": 1,
+  "logic_timer": 1,
+  "trigger_push": 1,
+  "water_lod_control": 1,
+  "env_skypaint": 1,
+  "info_apc_missile_hint": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 30914,
+   "limit": 65536,
+   "pct": 47.2
+  },
+  "FACES": {
+   "count": 35260,
+   "limit": 65536,
+   "pct": 53.8
+  },
+  "BRUSHES": {
+   "count": 6918,
+   "limit": 8192,
+   "pct": 84.4
+  },
+  "BRUSHSIDES": {
+   "count": 54675,
+   "limit": 65536,
+   "pct": 83.4
+  },
+  "TEXINFO": {
+   "count": 7519,
+   "limit": 12288,
+   "pct": 61.2
+  },
+  "NODES": {
+   "count": 16013,
+   "limit": 65536,
+   "pct": 24.4
+  },
+  "EDGES": {
+   "count": 151584,
+   "limit": 256000,
+   "pct": 59.2
+  },
+  "VERTEXES": {
+   "count": 57467,
+   "limit": 65536,
+   "pct": 87.7
+  },
+  "MODELS": {
+   "count": 83,
+   "limit": 1024,
+   "pct": 8.1
+  },
+  "DISPINFO": {
+   "count": 315,
+   "limit": 2048,
+   "pct": 15.4
+  },
+  "CUBEMAPS": {
+   "count": 206,
+   "limit": 1024,
+   "pct": 20.1
+  },
+  "OVERLAYS": {
+   "count": 18,
+   "limit": 512,
+   "pct": 3.5
+  },
+  "WORLDLIGHTS": {
+   "count": 812,
+   "limit": 8192,
+   "pct": 9.9
+  },
+  "AREAPORTALS": {
+   "count": 1,
+   "limit": 1024,
+   "pct": 0.1
+  }
+ },
+ "advice": [
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 84.4% of its commonly cited limit.",
+  "BRUSHSIDES at 83.4% of its commonly cited limit.",
+  "VERTEXES at 87.7% of its commonly cited limit."
+ ]
+}

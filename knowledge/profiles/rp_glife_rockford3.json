@@ -1,0 +1,172 @@
+{
+ "map": "rp_glife_rockford3",
+ "workshop_id": "876839844",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 51.97,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 5146,
+  "leafs": 11290
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": false
+ },
+ "pakfile_files": 1325,
+ "pakfile_mb": 16.6,
+ "pak_types": {
+  "vmt": 909,
+  "vtf": 416
+ },
+ "entities": 2324,
+ "named_entities": 311,
+ "faces": 25456,
+ "limits_max_pct": 75.1,
+ "limits_max_element": "BRUSHES",
+ "static_props": 2672,
+ "connections": 172,
+ "broken_connections": 0,
+ "naming": {
+  "named": 311,
+  "convention_ratio": 0.28,
+  "prefixes": {
+   "appartement": 18,
+   "spawn": 10,
+   "banque": 9,
+   "door": 8,
+   "garage": 7,
+   "prison": 5,
+   "zone": 4,
+   "egout": 4,
+   "shop": 4,
+   "club": 4,
+   "rl": 2,
+   "coffre": 2
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "func_rotating",
+  "logic_auto",
+  "logic_compare",
+  "logic_relay",
+  "prop_door_rotating",
+  "trigger_multiple",
+  "trigger_push",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light_spot": 767,
+  "infodecal": 513,
+  "prop_door_rotating": 209,
+  "prop_dynamic": 192,
+  "light": 191,
+  "func_areaportal": 100,
+  "func_door_rotating": 58,
+  "info_player_start": 50,
+  "func_button": 33,
+  "func_door": 30,
+  "func_areaportalwindow": 22,
+  "trigger_multiple": 21,
+  "func_illusionary": 20,
+  "point_spotlight": 18,
+  "move_rope": 12,
+  "keyframe_rope": 11,
+  "prop_dynamic_override": 10,
+  "env_sprite": 7,
+  "trigger_teleport": 7,
+  "info_ladder": 5,
+  "info_teleport_destination": 5,
+  "prop_physics_override": 5,
+  "prop_physics_multiplayer": 5,
+  "func_brush": 3,
+  "func_rotating": 3,
+  "prop_physics": 3,
+  "logic_compare": 2,
+  "logic_relay": 2,
+  "point_camera": 2,
+  "env_smokestack": 2
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 15002,
+   "limit": 65536,
+   "pct": 22.9
+  },
+  "FACES": {
+   "count": 25456,
+   "limit": 65536,
+   "pct": 38.8
+  },
+  "BRUSHES": {
+   "count": 6153,
+   "limit": 8192,
+   "pct": 75.1
+  },
+  "BRUSHSIDES": {
+   "count": 40856,
+   "limit": 65536,
+   "pct": 62.3
+  },
+  "TEXINFO": {
+   "count": 5908,
+   "limit": 12288,
+   "pct": 48.1
+  },
+  "NODES": {
+   "count": 11107,
+   "limit": 65536,
+   "pct": 16.9
+  },
+  "EDGES": {
+   "count": 122626,
+   "limit": 256000,
+   "pct": 47.9
+  },
+  "VERTEXES": {
+   "count": 46925,
+   "limit": 65536,
+   "pct": 71.6
+  },
+  "MODELS": {
+   "count": 182,
+   "limit": 1024,
+   "pct": 17.8
+  },
+  "DISPINFO": {
+   "count": 149,
+   "limit": 2048,
+   "pct": 7.3
+  },
+  "CUBEMAPS": {
+   "count": 208,
+   "limit": 1024,
+   "pct": 20.3
+  },
+  "OVERLAYS": {
+   "count": 78,
+   "limit": 512,
+   "pct": 15.2
+  },
+  "WORLDLIGHTS": {
+   "count": 960,
+   "limit": 8192,
+   "pct": 11.7
+  },
+  "AREAPORTALS": {
+   "count": 243,
+   "limit": 1024,
+   "pct": 23.7
+  }
+ },
+ "advice": [
+  "BRUSHES at 75.1% of its commonly cited limit."
+ ]
+}

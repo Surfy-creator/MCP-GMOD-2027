@@ -1,0 +1,177 @@
+{
+ "map": "rp_evocity2_v5p",
+ "workshop_id": "538207599",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 186.09,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 8312,
+  "leafs": 19462
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 1696,
+ "pakfile_mb": 15.9,
+ "pak_types": {
+  "vmt": 1300,
+  "vtf": 396
+ },
+ "entities": 2913,
+ "named_entities": 786,
+ "faces": 35768,
+ "limits_max_pct": 88.4,
+ "limits_max_element": "VERTEXES",
+ "static_props": 4419,
+ "connections": 399,
+ "broken_connections": 0,
+ "naming": {
+  "named": 786,
+  "convention_ratio": 0.29,
+  "prefixes": {
+   "lightsignal": 120,
+   "hangar": 20,
+   "blueline": 16,
+   "floordoor": 16,
+   "mn": 8,
+   "syn": 7,
+   "sun": 5,
+   "control": 5,
+   "dl": 5,
+   "lift": 5,
+   "cam": 4,
+   "but": 4
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_areaportalwindow",
+  "func_breakable",
+  "func_brush",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_movelinear",
+  "func_tracktrain",
+  "logic_auto",
+  "logic_case",
+  "logic_compare",
+  "logic_relay",
+  "logic_timer",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_teleport"
+ ],
+ "class_histogram_top": {
+  "light_spot": 1320,
+  "light": 338,
+  "env_sprite": 192,
+  "prop_door_rotating": 168,
+  "func_door": 119,
+  "func_button": 114,
+  "prop_dynamic": 95,
+  "prop_physics_multiplayer": 94,
+  "func_door_rotating": 69,
+  "keyframe_rope": 55,
+  "infodecal": 52,
+  "path_track": 44,
+  "ambient_generic": 38,
+  "prop_dynamic_override": 24,
+  "prop_physics": 21,
+  "env_soundscape": 21,
+  "move_rope": 14,
+  "trigger_multiple": 12,
+  "func_tracktrain": 10,
+  "func_areaportal": 10,
+  "func_brush": 7,
+  "logic_timer": 6,
+  "trigger_teleport": 6,
+  "info_teleport_destination": 6,
+  "logic_compare": 6,
+  "info_player_start": 6,
+  "func_monitor": 5,
+  "point_camera": 4,
+  "logic_auto": 4,
+  "info_ladder": 4
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 19934,
+   "limit": 65536,
+   "pct": 30.4
+  },
+  "FACES": {
+   "count": 35768,
+   "limit": 65536,
+   "pct": 54.6
+  },
+  "BRUSHES": {
+   "count": 7093,
+   "limit": 8192,
+   "pct": 86.6
+  },
+  "BRUSHSIDES": {
+   "count": 47064,
+   "limit": 65536,
+   "pct": 71.8
+  },
+  "TEXINFO": {
+   "count": 10123,
+   "limit": 12288,
+   "pct": 82.4
+  },
+  "NODES": {
+   "count": 19112,
+   "limit": 65536,
+   "pct": 29.2
+  },
+  "EDGES": {
+   "count": 160176,
+   "limit": 256000,
+   "pct": 62.6
+  },
+  "VERTEXES": {
+   "count": 57962,
+   "limit": 65536,
+   "pct": 88.4
+  },
+  "MODELS": {
+   "count": 349,
+   "limit": 1024,
+   "pct": 34.1
+  },
+  "DISPINFO": {
+   "count": 1255,
+   "limit": 2048,
+   "pct": 61.3
+  },
+  "CUBEMAPS": {
+   "count": 198,
+   "limit": 1024,
+   "pct": 19.3
+  },
+  "OVERLAYS": {
+   "count": 210,
+   "limit": 512,
+   "pct": 41.0
+  },
+  "WORLDLIGHTS": {
+   "count": 1807,
+   "limit": 8192,
+   "pct": 22.1
+  },
+  "AREAPORTALS": {
+   "count": 29,
+   "limit": 1024,
+   "pct": 2.8
+  }
+ },
+ "advice": [
+  "BRUSHES at 86.6% of its commonly cited limit.",
+  "TEXINFO at 82.4% of its commonly cited limit.",
+  "VERTEXES at 88.4% of its commonly cited limit."
+ ]
+}

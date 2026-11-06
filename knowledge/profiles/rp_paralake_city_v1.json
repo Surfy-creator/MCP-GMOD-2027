@@ -1,0 +1,188 @@
+{
+ "map": "rp_paralake_city_v1",
+ "workshop_id": "226536385",
+ "source": "analysis numbers only; the BSP is not included",
+ "size_mb": 367.34,
+ "bsp_version": 20,
+ "visibility": {
+  "clusters": 8823,
+  "leafs": 23772
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": false
+ },
+ "pakfile_files": 8476,
+ "pakfile_mb": 317.1,
+ "pak_types": {
+  "vmt": 2475,
+  "vhv": 2321,
+  "vtf": 931,
+  "vtx": 1377,
+  "mdl": 459,
+  "phy": 444,
+  "vvd": 459,
+  "png": 1,
+  "psd": 2,
+  "wav": 6,
+  "mp3": 1
+ },
+ "entities": 2741,
+ "named_entities": 477,
+ "faces": 36797,
+ "limits_max_pct": 95.8,
+ "limits_max_element": "BRUSHES",
+ "static_props": 2322,
+ "connections": 478,
+ "broken_connections": 0,
+ "naming": {
+  "named": 477,
+  "convention_ratio": 0.97,
+  "prefixes": {
+   "paralake": 128,
+   "monorail": 55,
+   "ch": 45,
+   "pd": 30,
+   "office": 19,
+   "suburbs": 18,
+   "fish": 14,
+   "rope": 10,
+   "harbor": 9,
+   "playground": 9,
+   "uwe": 9,
+   "farm": 7
+  }
+ },
+ "logic_classes": [
+  "ambient_generic",
+  "func_areaportal",
+  "func_breakable",
+  "func_button",
+  "func_door",
+  "func_door_rotating",
+  "func_rotating",
+  "func_tracktrain",
+  "logic_auto",
+  "logic_case",
+  "logic_collision_pair",
+  "logic_timer",
+  "point_template",
+  "prop_door_rotating",
+  "trigger_hurt",
+  "trigger_multiple",
+  "trigger_push",
+  "trigger_teleport",
+  "trigger_waterydeath"
+ ],
+ "class_histogram_top": {
+  "prop_dynamic": 1179,
+  "light": 539,
+  "prop_door_rotating": 250,
+  "light_spot": 108,
+  "func_door": 93,
+  "func_lod": 63,
+  "path_track": 61,
+  "prop_dynamic_override": 58,
+  "infodecal": 53,
+  "func_button": 45,
+  "func_breakable": 41,
+  "env_sprite": 36,
+  "func_door_rotating": 28,
+  "trigger_multiple": 24,
+  "func_fish_pool": 15,
+  "ambient_generic": 13,
+  "func_rotating": 12,
+  "info_ladder_dismount": 10,
+  "func_tracktrain": 8,
+  "water_lod_control": 7,
+  "prop_physics_multiplayer": 6,
+  "move_rope": 5,
+  "phys_lengthconstraint": 5,
+  "keyframe_rope": 5,
+  "func_useableladder": 5,
+  "env_spark": 4,
+  "env_steam": 4,
+  "env_shake": 4,
+  "logic_case": 4,
+  "func_reflective_glass": 4
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 19544,
+   "limit": 65536,
+   "pct": 29.8
+  },
+  "FACES": {
+   "count": 36797,
+   "limit": 65536,
+   "pct": 56.1
+  },
+  "BRUSHES": {
+   "count": 7848,
+   "limit": 8192,
+   "pct": 95.8
+  },
+  "BRUSHSIDES": {
+   "count": 51281,
+   "limit": 65536,
+   "pct": 78.2
+  },
+  "TEXINFO": {
+   "count": 7202,
+   "limit": 12288,
+   "pct": 58.6
+  },
+  "NODES": {
+   "count": 23442,
+   "limit": 65536,
+   "pct": 35.8
+  },
+  "EDGES": {
+   "count": 168353,
+   "limit": 256000,
+   "pct": 65.8
+  },
+  "VERTEXES": {
+   "count": 61962,
+   "limit": 65536,
+   "pct": 94.5
+  },
+  "MODELS": {
+   "count": 329,
+   "limit": 1024,
+   "pct": 32.1
+  },
+  "DISPINFO": {
+   "count": 202,
+   "limit": 2048,
+   "pct": 9.9
+  },
+  "CUBEMAPS": {
+   "count": 146,
+   "limit": 1024,
+   "pct": 14.3
+  },
+  "OVERLAYS": {
+   "count": 121,
+   "limit": 512,
+   "pct": 23.6
+  },
+  "WORLDLIGHTS": {
+   "count": 673,
+   "limit": 8192,
+   "pct": 8.2
+  },
+  "AREAPORTALS": {
+   "count": 5,
+   "limit": 1024,
+   "pct": 0.5
+  }
+ },
+ "advice": [
+  "Many prop_dynamic: prefer prop_static where no animation/physics is needed.",
+  "Pakfile > 60 MB: consider moving content to a workshop addon and using bspzip -repack.",
+  "BRUSHES at 95.8% of its commonly cited limit.",
+  "BRUSHSIDES at 78.2% of its commonly cited limit.",
+  "VERTEXES at 94.5% of its commonly cited limit."
+ ]
+}
