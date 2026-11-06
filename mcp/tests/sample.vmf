@@ -1,0 +1,16 @@
+versioninfo { "mapversion" "1" }
+world
+{
+	"id" "1"
+	"classname" "worldspawn"
+	solid { "id" "2"
+		side { "id" "1" "plane" "(0 0 0) (0 64 0) (64 64 0)" "material" "BRICK/BRICKWALL001A" }
+		side { "id" "2" "plane" "(0 0 64) (64 0 64) (64 64 64)" "material" "TOOLS/TOOLSNODRAW" }
+	}
+}
+entity { "id" "10" "classname" "info_player_start" "origin" "0 0 8" }
+entity { "id" "11" "classname" "func_button" "targetname" "bank_btn_vault" "origin" "0 0 0"
+	connections { "OnPressed" "bank_door_vault,Open,,0,-1" "OnPressed" "ghost_door,Open,,0,-1" }
+	solid { "id" "3" side { "id" "3" "plane" "(0 0 0) (0 8 0) (8 8 0)" "material" "TOOLS/TOOLSTRIGGER" } }
+}
+entity { "id" "12" "classname" "func_door" "targetname" "bank_door_vault" "parentname" "missing_parent" "origin" "0 0 0" }

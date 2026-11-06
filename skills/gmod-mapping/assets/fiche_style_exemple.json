@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "nom": "friche_industrielle_crepuscule",
+  "source": "sentence: \"an abandoned factory at sunset, dust in the air\"",
+  "mots": [
+    "rusty",
+    "dusty",
+    "twilight"
+  ],
+  "references": [
+    "derelict industrial site in northern France, 1970s",
+    "low orange light filtered through dirty skylights"
+  ],
+  "references_visuelles": [
+    {
+      "source": "user photo: concrete flood channel, South San Francisco",
+      "retenu": "concrete stained with algae below the waterline, chain-link fence, tags on blind walls"
+    },
+    {
+      "source": "user photo: tilt-up warehouse and tow trucks",
+      "retenu": "painted pilasters, sectional dock door, large street number, overhead cables"
+    },
+    {
+      "source": "image search: Rust Belt industrial wastelands (to be done at project time)",
+      "retenu": "dirty skylights, riveted frameworks, rust streaking below the gutters"
+    }
+  ],
+  "palette": [
+    {
+      "hex": "#3A3632",
+      "role": "dominante",
+      "part": 60,
+      "usage": "concrete, walls, floors"
+    },
+    {
+      "hex": "#7A5A3C",
+      "role": "secondaire",
+      "part": 30,
+      "usage": "rusted metal, framework"
+    },
+    {
+      "hex": "#E8913A",
+      "role": "accent",
+      "part": 10,
+      "usage": "sunlight, signage, objective"
+    }
+  ],
+  "materiaux": [
+    "raw concrete",
+    "rusted steel",
+    "dirty glass"
+  ],
+  "etat": "abandoned for 20 years: rust beneath drainage, debris at the foot of the walls, broken windows on the windward side",
+  "lumiere": {
+    "heure": "sunset",
+    "meteo": "clear sky, dust-laden air",
+    "soleil": {
+      "couleur": "#FFA860",
+      "intensite": 260,
+      "yaw": 250,
+      "pitch": -12
+    },
+    "ambiant": {
+      "couleur": "#5A6A8A",
+      "intensite": 35
+    }
+  },
+  "brouillard": {
+    "couleur": "#B08868",
+    "debut": 384,
+    "fin": 4096,
+    "densite_max": 0.55
+  },
+  "props_preferes": [
+    "drums and crates from the props_junk family",
+    "metal framework in modules created in Blender",
+    "skylights as dirty overlays"
+  ],
+  "a_eviter": [
+    "clean domestic furniture",
+    "colored neon lights",
+    "tropical vegetation"
+  ]
+}

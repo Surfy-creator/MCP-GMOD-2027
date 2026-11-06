@@ -1,0 +1,16 @@
+[project]
+name = "gmod-hammer-mcp"
+version = "0.1.0"
+description = "MCP server for Garry's Mod mapping: Hammer/Hammer++ knowledge, VMF/BSP analysis, entity I/O graphs, compile planning"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2"]
+
+[project.scripts]
+gmod-hammer-mcp = "gmod_hammer_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["gmod_hammer_mcp*"]

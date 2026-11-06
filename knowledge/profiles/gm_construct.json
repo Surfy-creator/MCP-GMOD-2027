@@ -1,0 +1,118 @@
+{
+ "map": "gm_construct",
+ "source": "shipped with Garry's Mod (analysis only, BSP not included)",
+ "size_mb": 35.03,
+ "visibility": {
+  "clusters": 676,
+  "leafs": 5002
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 599,
+ "entities": 1227,
+ "faces": 9460,
+ "limits_max_pct": 26.9,
+ "static_props": 182,
+ "connections": 24,
+ "class_histogram_top": {
+  "info_node": 815,
+  "light": 108,
+  "info_node_air_hint": 76,
+  "info_player_start": 33,
+  "light_spot": 28,
+  "info_node_hint": 24,
+  "infodecal": 19,
+  "env_soundscape": 19,
+  "info_hint": 16,
+  "info_node_climb": 15,
+  "path_track": 14,
+  "path_corner": 8,
+  "info_node_air": 8,
+  "func_brush": 6,
+  "point_spotlight": 5,
+  "prop_dynamic": 5,
+  "info_ladder_dismount": 4,
+  "prop_physics": 4,
+  "lua_run": 2,
+  "func_vehicleclip": 2,
+  "func_illusionary": 2,
+  "worldspawn": 1,
+  "func_useableladder": 1,
+  "func_reflective_glass": 1,
+  "func_button": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 4322,
+   "limit": 65536,
+   "pct": 6.6
+  },
+  "FACES": {
+   "count": 9460,
+   "limit": 65536,
+   "pct": 14.4
+  },
+  "BRUSHES": {
+   "count": 2203,
+   "limit": 8192,
+   "pct": 26.9
+  },
+  "BRUSHSIDES": {
+   "count": 14946,
+   "limit": 65536,
+   "pct": 22.8
+  },
+  "TEXINFO": {
+   "count": 960,
+   "limit": 12288,
+   "pct": 7.8
+  },
+  "NODES": {
+   "count": 4988,
+   "limit": 65536,
+   "pct": 7.6
+  },
+  "EDGES": {
+   "count": 39912,
+   "limit": 256000,
+   "pct": 15.6
+  },
+  "VERTEXES": {
+   "count": 14079,
+   "limit": 65536,
+   "pct": 21.5
+  },
+  "MODELS": {
+   "count": 13,
+   "limit": 1024,
+   "pct": 1.3
+  },
+  "DISPINFO": {
+   "count": 110,
+   "limit": 2048,
+   "pct": 5.4
+  },
+  "CUBEMAPS": {
+   "count": 28,
+   "limit": 1024,
+   "pct": 2.7
+  },
+  "OVERLAYS": {
+   "count": 11,
+   "limit": 512,
+   "pct": 2.1
+  },
+  "WORLDLIGHTS": {
+   "count": 138,
+   "limit": 8192,
+   "pct": 1.7
+  },
+  "AREAPORTALS": {
+   "count": 1,
+   "limit": 1024,
+   "pct": 0.1
+  }
+ }
+}

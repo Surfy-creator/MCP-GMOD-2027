@@ -1,0 +1,47 @@
+{
+  "name": "maison_demo",
+  "sky": "sky_day01_01",
+  "wall_thickness": 8,
+  "sun": { "yaw": 205, "pitch": -50 },
+  "rooms": [
+    {
+      "id": "salon", "kind": "salon",
+      "x": 0, "y": 0, "w": 384, "d": 320, "h": 144,
+      "openings": [
+        { "side": "south", "type": "door",   "offset": 160, "width": 64, "height": 108 },
+        { "side": "south", "type": "window", "offset": 40,  "width": 80, "height": 64, "sill": 40 },
+        { "side": "west",  "type": "window", "offset": 120, "width": 80, "height": 64, "sill": 40 },
+        { "side": "east",  "type": "door",   "offset": 128, "width": 64, "height": 108 },
+        { "side": "north", "type": "door",   "offset": 48,  "width": 64, "height": 108 }
+      ]
+    },
+    {
+      "id": "cuisine", "kind": "cuisine",
+      "x": 392, "y": 0, "w": 256, "d": 320, "h": 144,
+      "skip": ["west"],
+      "openings": [
+        { "side": "east",  "type": "window", "offset": 120, "width": 80, "height": 64, "sill": 40 },
+        { "side": "south", "type": "window", "offset": 96,  "width": 64, "height": 64, "sill": 40 }
+      ]
+    },
+    {
+      "id": "chambre", "kind": "chambre",
+      "x": 0, "y": 328, "w": 384, "d": 256, "h": 144,
+      "skip": ["south"],
+      "openings": [
+        { "side": "north", "type": "window", "offset": 150, "width": 80, "height": 64, "sill": 40 },
+        { "side": "west",  "type": "window", "offset": 90,  "width": 64, "height": 64, "sill": 40 }
+      ]
+    }
+  ],
+  "props": [
+    { "model": "models/props_c17/FurnitureCouch001a.mdl", "x": 192, "y": 250, "z": 0, "yaw": 270 },
+    { "model": "models/props_c17/FurnitureTable001a.mdl", "x": 192, "y": 150, "z": 0, "yaw": 0 },
+    { "model": "models/props_c17/FurnitureFridge001a.mdl", "x": 620, "y": 290, "z": 0, "yaw": 180 },
+    { "model": "models/props_c17/FurnitureSink001a.mdl", "x": 520, "y": 300, "z": 0, "yaw": 270 },
+    { "model": "models/props_wasteland/prison_bedframe001b.mdl", "x": 192, "y": 470, "z": 0, "yaw": 90 }
+  ],
+  "spawns": [
+    { "x": 192, "y": -60, "z": 0, "yaw": 90 }
+  ]
+}

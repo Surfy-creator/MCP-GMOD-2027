@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.bsp
+*.gma
+*.vmf_autosave
+.venv/
+*.egg-info/

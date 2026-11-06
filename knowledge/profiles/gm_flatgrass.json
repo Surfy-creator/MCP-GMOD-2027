@@ -1,0 +1,106 @@
+{
+ "map": "gm_flatgrass",
+ "source": "shipped with Garry's Mod (analysis only, BSP not included)",
+ "size_mb": 45.23,
+ "visibility": {
+  "clusters": 1087,
+  "leafs": 3610
+ },
+ "lighting": {
+  "ldr": true,
+  "hdr": true
+ },
+ "pakfile_files": 25,
+ "entities": 217,
+ "faces": 2922,
+ "limits_max_pct": 5.7,
+ "static_props": 1,
+ "connections": 4,
+ "class_histogram_top": {
+  "info_node": 150,
+  "info_player_start": 56,
+  "worldspawn": 1,
+  "sky_camera": 1,
+  "env_tonemap_controller": 1,
+  "logic_auto": 1,
+  "light_environment": 1,
+  "infodecal": 1,
+  "env_skypaint": 1,
+  "env_fog_controller": 1,
+  "shadow_control": 1,
+  "env_sun": 1,
+  "light": 1
+ },
+ "element_counts": {
+  "PLANES": {
+   "count": 1286,
+   "limit": 65536,
+   "pct": 2.0
+  },
+  "FACES": {
+   "count": 2922,
+   "limit": 65536,
+   "pct": 4.5
+  },
+  "BRUSHES": {
+   "count": 112,
+   "limit": 8192,
+   "pct": 1.4
+  },
+  "BRUSHSIDES": {
+   "count": 1419,
+   "limit": 65536,
+   "pct": 2.2
+  },
+  "TEXINFO": {
+   "count": 36,
+   "limit": 12288,
+   "pct": 0.3
+  },
+  "NODES": {
+   "count": 3608,
+   "limit": 65536,
+   "pct": 5.5
+  },
+  "EDGES": {
+   "count": 7243,
+   "limit": 256000,
+   "pct": 2.8
+  },
+  "VERTEXES": {
+   "count": 3738,
+   "limit": 65536,
+   "pct": 5.7
+  },
+  "MODELS": {
+   "count": 1,
+   "limit": 1024,
+   "pct": 0.1
+  },
+  "DISPINFO": {
+   "count": 16,
+   "limit": 2048,
+   "pct": 0.8
+  },
+  "CUBEMAPS": {
+   "count": 8,
+   "limit": 1024,
+   "pct": 0.8
+  },
+  "OVERLAYS": {
+   "count": 0,
+   "limit": 512,
+   "pct": 0.0
+  },
+  "WORLDLIGHTS": {
+   "count": 3,
+   "limit": 8192,
+   "pct": 0.0
+  },
+  "AREAPORTALS": {
+   "count": 1,
+   "limit": 1024,
+   "pct": 0.1
+  }
+ }
+}

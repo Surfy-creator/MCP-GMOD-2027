@@ -1,0 +1,194 @@
+{
+ "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=1719226443",
+ "collection_title": "MAP POUR DARK RP",
+ "curator": "Mathéo",
+ "captured": "2026-11-06",
+ "count": 36,
+ "policy": "Titles/authors only. Third-party map binaries are NOT bundled or redistributed. Profile maps you own or are subscribed to with the bsp_analyze / rp_scorecard tools; save the JSON in knowledge/profiles/.",
+ "maps": [
+  {
+   "title": "RP Florida V2",
+   "author": "Steinman"
+  },
+  {
+   "title": "EvoCity2_v5p",
+   "author": "Sgt. Sickness"
+  },
+  {
+   "title": "RP Rockford GLife",
+   "author": "pichotm"
+  },
+  {
+   "title": "RP rockford Open",
+   "author": "Lg"
+  },
+  {
+   "title": "RP Rockford (Map File Only)",
+   "author": "Statua"
+  },
+  {
+   "title": "RP_Paralake_City_V1",
+   "author": "State Trooper"
+  },
+  {
+   "title": "rp_newexton",
+   "author": "Vawяiss"
+  },
+  {
+   "title": "Rp_NewExton2",
+   "author": "Vawяiss"
+  },
+  {
+   "title": "Pines City V2B",
+   "author": "Joufflu"
+  },
+  {
+   "title": "Pines City V1X",
+   "author": "Joufflu"
+  },
+  {
+   "title": "RP_World",
+   "author": "ZeLzStorm"
+  },
+  {
+   "title": "rp_eastcoast_v4b (April 25 patch)",
+   "author": "Paktacatta"
+  },
+  {
+   "title": "RP_UnionCity_Day",
+   "author": "Fishke"
+  },
+  {
+   "title": "RP_Littletown",
+   "author": "Skotty"
+  },
+  {
+   "title": "Rp_Downtown_2017",
+   "author": "Kenobi"
+  },
+  {
+   "title": "RP ranoxcity v1",
+   "author": "Anthon"
+  },
+  {
+   "title": "rp_Hollywood_Day",
+   "author": "MergasTroll"
+  },
+  {
+   "title": "RP Truenorth",
+   "author": "Statua"
+  },
+  {
+   "title": "Rp Evocity Sunshine *Beta*",
+   "author": "xdl"
+  },
+  {
+   "title": "Rp Rockford Sunshine v1.2",
+   "author": "xdl"
+  },
+  {
+   "title": "rp_downtown_triton",
+   "author": "Hinzy"
+  },
+  {
+   "title": "RP Life Rockford V1 (map file-only)",
+   "author": "Fantomas"
+  },
+  {
+   "title": "rp retricity",
+   "author": "Dididreams"
+  },
+  {
+   "title": "Uptown v4 - Day",
+   "author": "ws"
+  },
+  {
+   "title": "RP Rockford by MK v2",
+   "author": "MauriceKrabs"
+  },
+  {
+   "title": "RP Modern Rockford(map file-only)",
+   "author": "Lirrox"
+  },
+  {
+   "title": "rp_downtown_triton_v2",
+   "author": "Hinzy"
+  },
+  {
+   "title": "Rockford French v5 Alpha",
+   "author": "[Nexifi] John Sheppard"
+  },
+  {
+   "title": "Rockford French v4b",
+   "author": "[Nexifi] John Sheppard"
+  },
+  {
+   "title": "Rockford French v3b",
+   "author": "[Nexifi] John Sheppard"
+  },
+  {
+   "title": "Uptown v4u - 2019 Update",
+   "author": "ws"
+  },
+  {
+   "title": "RP_UnionCity",
+   "author": "Fishke"
+  },
+  {
+   "title": "Starisland Map Finale",
+   "author": "CornFlakes"
+  },
+  {
+   "title": "rp_chaos_city_v33x_03",
+   "author": "(author name omitted)"
+  },
+  {
+   "title": "RP Riverden v1a",
+   "author": "Steinman"
+  },
+  {
+   "title": "RP_SouthSide_Day",
+   "author": "Fishke"
+  }
+ ],
+ "families": {
+  "Rockford": [
+   "RP Rockford GLife",
+   "RP rockford Open",
+   "RP Rockford (Map File Only)",
+   "Rp Rockford Sunshine v1.2",
+   "RP Life Rockford V1 (map file-only)",
+   "RP Rockford by MK v2",
+   "RP Modern Rockford(map file-only)",
+   "Rockford French v3b",
+   "Rockford French v4b",
+   "Rockford French v5 Alpha"
+  ],
+  "Evocity": [
+   "EvoCity2_v5p",
+   "Rp Evocity Sunshine *Beta*"
+  ],
+  "UnionCity/SouthSide (Fishke)": [
+   "RP_UnionCity",
+   "RP_UnionCity_Day",
+   "RP_SouthSide_Day"
+  ],
+  "Downtown (Triton/2017)": [
+   "rp_downtown_triton",
+   "rp_downtown_triton_v2",
+   "Rp_Downtown_2017"
+  ],
+  "Uptown": [
+   "Uptown v4 - Day",
+   "Uptown v4u - 2019 Update"
+  ],
+  "NewExton": [
+   "rp_newexton",
+   "Rp_NewExton2"
+  ],
+  "Pines City": [
+   "Pines City V1X",
+   "Pines City V2B"
+  ]
+ }
+}

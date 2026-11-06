@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "gmod-hammer": {
+      "command": "python",
+      "args": ["-m", "gmod_hammer_mcp.server"],
+      "cwd": "mcp"
+    }
+  }
+}
