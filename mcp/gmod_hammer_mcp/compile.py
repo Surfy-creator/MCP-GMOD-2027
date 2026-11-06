@@ -58,6 +58,9 @@ def parse_log(text: str) -> dict:
         "leaked": bool(re.search(r"\*\*\* leaked \*\*\*|map leaked", text, re.I)),
         "leak_hint": (re.search(r"Entity (\S+) \(([^)]*)\) leaked", text) or [None, None, None])[0],
         "errors": re.findall(r"^.*(?:ERROR|Error:|fatal).*$", text, re.M | re.I)[:15],
+        "not_static_models": sorted(set(re.findall(r'prop_static using model "([^"]+)"', text))),
+        "fix_hint": "Models listed in not_static_models were not compiled with $staticprop: use prop_dynamic or prop_physics for them (or pick a static-capable model)."
+                    if "must be used on a dynamic entity" in text else None,
         "warnings": len(re.findall(r"warning", text, re.I)),
         "overflow": re.findall(r"^.*(?:MAX_MAP_\w+|overflow|exceeded).*$", text, re.M | re.I)[:10],
         "tail": text.strip().splitlines()[-8:],

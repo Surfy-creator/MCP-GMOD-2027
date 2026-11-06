@@ -35,11 +35,11 @@
     }
   ],
   "props": [
-    { "model": "models/props_c17/FurnitureCouch001a.mdl", "x": 192, "y": 250, "z": 0, "yaw": 270 },
-    { "model": "models/props_c17/FurnitureTable001a.mdl", "x": 192, "y": 150, "z": 0, "yaw": 0 },
-    { "model": "models/props_c17/FurnitureFridge001a.mdl", "x": 620, "y": 290, "z": 0, "yaw": 180 },
+    { "model": "models/props_c17/FurnitureCouch001a.mdl", "classname": "prop_dynamic", "x": 192, "y": 250, "z": 0, "yaw": 270 },
+    { "model": "models/props_c17/FurnitureTable001a.mdl", "classname": "prop_dynamic", "x": 192, "y": 150, "z": 0, "yaw": 0 },
+    { "model": "models/props_c17/FurnitureFridge001a.mdl", "classname": "prop_dynamic", "x": 620, "y": 290, "z": 0, "yaw": 180 },
     { "model": "models/props_c17/FurnitureSink001a.mdl", "x": 520, "y": 300, "z": 0, "yaw": 270 },
-    { "model": "models/props_wasteland/prison_bedframe001b.mdl", "x": 192, "y": 470, "z": 0, "yaw": 90 }
+    { "model": "models/props_wasteland/prison_bedframe001b.mdl", "classname": "prop_dynamic", "x": 192, "y": 470, "z": 0, "yaw": 90 }
   ],
   "spawns": [
     { "x": 192, "y": -60, "z": 0, "yaw": 90 }
