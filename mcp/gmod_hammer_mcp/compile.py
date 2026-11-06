@@ -20,6 +20,7 @@ def plan(env: dict, vmf: str, profile: str = "fast", threads: int | None = None)
     if not env.get("vbsp"):
         raise ValueError("vbsp not found; set GMOD_PATH")
     game = env["gamedir"]
+    vmf = str(Path(vmf).resolve())  # absolute, native separators (vbsp fails to open a log with mixed slashes)
     base = str(Path(vmf).with_suffix(""))
     steps = []
     for tool in ("vbsp", "vvis", "vrad"):
@@ -29,7 +30,8 @@ def plan(env: dict, vmf: str, profile: str = "fast", threads: int | None = None)
         cmd = [env[tool]] + flags
         if threads and tool != "vbsp":
             cmd += ["-threads", str(threads)]
-        cmd += ["-game", game, base]
+        # vbsp wants the .vmf file itself; vvis/vrad take the extension-less map name.
+        cmd += ["-game", game, str(vmf) if tool == "vbsp" else base]
         steps.append({"tool": tool, "cmd": cmd})
     steps.append({"tool": "copy", "note": f"copy {base}.bsp to {env['maps_dir']} (or compile from Hammer++ which does it)"})
     return {"profile": profile, "steps": steps,

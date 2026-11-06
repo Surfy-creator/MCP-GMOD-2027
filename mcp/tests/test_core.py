@@ -46,6 +46,8 @@ class T(unittest.TestCase):
         p = comp.plan(env, "x/map.vmf", "fast")
         self.assertEqual([s["tool"] for s in p["steps"][:3]], ["vbsp", "vvis", "vrad"])
         self.assertEqual(len(comp.plan(env, "x/map.vmf", "entities_only")["steps"]), 2)
+        self.assertTrue(p["steps"][0]["cmd"][-1].endswith("map.vmf"))
+        self.assertFalse(p["steps"][1]["cmd"][-1].endswith(".vmf"))
 
     def test_log(self):
         self.assertTrue(comp.parse_log("Entity info_player_start (0 0 0) leaked!\n*** leaked ***")["leaked"])
